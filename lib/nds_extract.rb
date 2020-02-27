@@ -6,7 +6,6 @@ end
 require 'pp'
 
  57  lib/nds_extract.rb 
-@@ -1,47 +1,65 @@
 # Provided, don't edit
 require 'directors_database'
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
@@ -64,7 +63,6 @@ def movies_with_director_key(name, movies_collection)
   #
   # RETURN:
   #
-@@ -63,6 +81,32 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
@@ -97,7 +95,6 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def movies_with_directors_set(source)
-  #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
 
