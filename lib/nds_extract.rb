@@ -5,11 +5,7 @@ def directors_database
 end
 require 'pp'
 
- 57  lib/nds_extract.rb 
-# Provided, don't edit
 require 'directors_database'
-# A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
-# [3,4,5], [6]] => [1,2,3,4,5,6].
 def flatten_a_o_a(aoa)
   result = []
   i = 0
@@ -32,16 +28,8 @@ def movie_with_director_name(director_name, movie_data)
     :director_name => director_name
   }
 end
-# Your code after this point
 def movies_with_director_key(name, movies_collection)
-  # GOAL: For each Hash in an Array (movies_collection), provide a collection
-  # of movies and a directors name to the movie_with_director_name method
-  # and accumulate the returned Array of movies into a new Array that's
-  # returned by this method.
-  #
-  # INPUT:
-  # * name: A director's name
-  # * movies_collection: An Array of Hashes where each Hash represents a movie
+
 
 
   new_arr = []
@@ -57,16 +45,6 @@ def movies_with_director_key(name, movies_collection)
 
 
   return new_arr
-
-
-
-  #
-  # RETURN:
-  #
-  #
-  # Hash whose keys are the studio names and whose values are the sum
-  # total of all the worldwide_gross numbers for every movie in the input Hash
-
 
   result = {} 
 
@@ -95,8 +73,6 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def movies_with_directors_set(source)
-  # Array of Arrays containing all of a director's movies. Each movie will need
-  # to have a :director_name key added to it.
 
   arr = []
   i = 0 
