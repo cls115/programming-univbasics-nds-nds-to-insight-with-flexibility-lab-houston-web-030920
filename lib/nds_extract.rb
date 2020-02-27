@@ -222,3 +222,4 @@ end
         :studio => "Karbit Poodles",
         :title => "The Fire Hydrant of Doom"
       }, 
+      ]
